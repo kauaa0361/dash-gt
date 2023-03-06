@@ -1,24 +1,32 @@
-import React, { Component } from 'react';
-import Chart from 'react-apexcharts'
+import React from 'react';
+import { Doughnut } from 'react-chartjs-2';
+import Chart from 'chart.js/auto';
 
-class Graph extends Component {
+Chart.register({
+  id: 'arc'
+});
+const data = {
+  labels: ['Red', 'Blue', 'Yellow'],
+  datasets: [
+    {
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
+      hoverOffset: 4,
+    },
+  ],
+};
 
-  constructor(props) {
-    super(props);
+const options = {
+  responsive: true,
+  maintainAspectRatio: false,
+};
 
-    this.state = {
-      options: {},
-      series: [44, 55, 41, 17, 15],
-      labels: ['A', 'B', 'C', 'D', 'E']
-    }
-  }
-
-  render() {
-    return (
-      <Chart className="mt-10"
-       options={this.state.options} series={this.state.series} type="donut" width="320" />
-    );
-  }
+function Graph() {
+  return (
+      <Doughnut className='' 
+      data={data} options={options} />
+  );
 }
 
 export default Graph;
