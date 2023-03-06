@@ -4,10 +4,12 @@ export function Header({cliente}) {
   
   return(
     <>
-    <header className="h-16 mt-8">
+    <header className="h-16 mt-8 flex items-center justify-between">
+      <section className="block">
         <h1 className="font-medium text-xl">{cliente}</h1>
         <p className="font-medium text-sm text-gray-800">Período: 01/02/2023 - 28/02/2023</p>
-        <Image width={200} height={200} src="/logo.jfif" alt="ads logo 4GrowthBR"/>
+      </section>
+        <Image className="flex items-center" width={200} height={200} src="/logo.jfif" alt="ads logo 4GrowthBR"/>
     </header>
     <div className="bg-gray-200 w-full h-1 mt-2 rounded-md"/>
     </>
