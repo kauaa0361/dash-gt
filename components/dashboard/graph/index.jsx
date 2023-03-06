@@ -24,7 +24,7 @@ const options = {
 
 function Graph() {
   return (
-      <Doughnut className='' 
+      <Doughnut
       data={data} options={options} />
   );
 }

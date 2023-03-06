@@ -1,18 +1,17 @@
 import { useState,useEffect } from "react";
-import { Title,DataSection,Description } from "./custom";
-import Graph from "../graph";
+import { Header,Title,DataSection,Description } from "./custom";
 
 export default function Dashboard() {
 
   const [download, setDownload] = useState(false)
 
-
   useEffect(() => {
     setDownload(true);
-  },[]);
+  });
 
   return(
     <main className="ml-10 mr-10">
+      <Header cliente="Dra Daniele"/>
       <Title icon="/ads.jpg" title="Visao Geral Google Ads"/>
       <section className="grid justify-left grid-flow-row-dense 
       grid-col-1 lg:grid-flow-col lg:grid-rows-2">
@@ -24,12 +23,6 @@ export default function Dashboard() {
       </section>
       <Description/>
       <Title icon="/ads.jpg" title="Tipo de dispositivo"/>
-      {download && (
-        <section className="grid justify-left grid-flow-row-dense 
-        grid-col-1 lg:grid-flow-col lg:grid-rows-2">
-          <Graph/>
-        </section>
-      )}
     </main>
   )
 }

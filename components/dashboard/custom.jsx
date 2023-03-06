@@ -1,11 +1,26 @@
 import Image from "next/image"
 
+export function Header({cliente}) {
+  
+  return(
+    <>
+    <header className="h-16 mt-8">
+        <h1 className="font-medium text-xl">{cliente}</h1>
+        <p className="font-medium text-sm text-gray-800">Período: 01/02/2023 - 28/02/2023</p>
+        <Image width={200} height={200} src="/logo.jfif" alt="ads logo 4GrowthBR"/>
+    </header>
+    <div className="bg-gray-200 w-full h-1 mt-2 rounded-md"/>
+    </>
+  )
+}
+
+
 export function DataSection({title, value}) {
   return (
     <section className="uppercase w-40 h-20 mt-5">
       <p className="text-md font-light text-slate-700">{title}</p>
       <p className="text-3xl font-medium mt-4">{value}</p>
-      <div className="bg-gray-400 w-full h-2 mt-2 rounded-md"/>
+      <div className="bg-gray-300 w-full h-1 mt-2 rounded-md"/>
     </section>
   )
 }
