@@ -9,7 +9,7 @@ export function Header({cliente}) {
         <h1 className="font-medium text-xl">{cliente}</h1>
         <p className="font-medium text-sm text-gray-800">Período: 01/02/2023 - 28/02/2023</p>
       </section>
-        <Image className="flex items-center" width={200} height={200} src="/logo.jfif" alt="ads logo 4GrowthBR"/>
+        <Image className="flex items-center" width={200} height={200} src="/logo.png" alt="ads logo 4GrowthBR"/>
     </header>
     <div className="bg-gray-200 w-full h-1 mt-2 rounded-md"/>
     </>
@@ -41,7 +41,7 @@ export function Description() {
 
 export function Title({icon,title}) {
   return(
-    <section className="flex mt-10">
+    <section className="flex mt-10 h-10">
       <Image className="w-8 h-8" width={200} height={200} src={icon} alt="ads logo"/>
       <h1 className="text-2xl font-medium">{title}</h1>
     </section>
