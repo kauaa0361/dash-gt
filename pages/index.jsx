@@ -31,7 +31,7 @@ export default function Home() {
 
 function CustomSection() {
   return(
-    <div className='w-64 h-48 bg-gray-500 rounded-lg hover:scale-125'>
+    <div className='mt-10 w-64 h-48 bg-gray-500 rounded-lg hover:scale-125'>
       <p className='mt-20 text-center text-gray-800'>Marca / Cliente</p>
     </div>
   )
