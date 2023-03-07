@@ -12,9 +12,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className="mt-10 grid center text-center">
-          <h1>Bem vindo ao Dashboard</h1>
-          <h1>4 growth br</h1>
-          <Link href="/pagina2" className="bg-green-400 text-white w-auto mx-20">Acessar</Link>
+        <h1>Bem vindo ao Dashboard</h1>
+        <h1>4 growth br</h1>
+      <Link href="/pagina2" className="bg-green-400 text-white w-auto mx-20">Acessar</Link>
       </main>
     </>
   )
